@@ -17,7 +17,7 @@ create table bronze.crm_cust_info
 
 go
 if OBJECT_ID('bronze.crm_prd_info','U') is NOT NULL
- drop table bronze.crm_cust_info;
+ drop table bronze.crm_prd_info;
 go
 create table bronze.crm_prd_info
 (
@@ -32,7 +32,7 @@ create table bronze.crm_prd_info
 go
 
 if OBJECT_ID('bronze.crm_cust_info','U') is NOT NULL
- drop table bronze.crm_cust_info;
+ drop table bronze.crm_sales_details;
 go
 create table bronze.crm_sales_details
 (
@@ -49,7 +49,7 @@ sls_price INT
 
 go
 if OBJECT_ID('bronze.erp_loc_a101','U') is NOT NULL
- drop table bronze.crm_cust_info;
+ drop table bronze.erp_loc_a101;
 go
 
 create TABLE bronze.erp_loc_a101 (
@@ -59,7 +59,7 @@ create TABLE bronze.erp_loc_a101 (
 
 go
 if OBJECT_ID('bronze.erp_cust_az12','U') is NOT NULL
- drop table bronze.crm_cust_info;
+ drop table bronze.erp_cust_az12;
 go
 
 create TABLE bronze.erp_cust_az12 (
@@ -71,7 +71,7 @@ create TABLE bronze.erp_cust_az12 (
 go
 
 if OBJECT_ID('bronze.erp_px_cat_g1v2','U') is NOT NULL
- drop table bronze.crm_cust_info;
+ drop table bronze.erp_px_cat_g1v2;
 go
 create TABLE bronze.erp_px_cat_g1v2 (
     ID  NVARCHAR(50),
