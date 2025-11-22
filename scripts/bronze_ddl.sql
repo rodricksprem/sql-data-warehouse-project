@@ -31,7 +31,7 @@ create table bronze.crm_prd_info
 );
 go
 
-if OBJECT_ID('bronze.crm_cust_info','U') is NOT NULL
+if OBJECT_ID('bronze.crm_sales_details','U') is NOT NULL
  drop table bronze.crm_sales_details;
 go
 create table bronze.crm_sales_details
