@@ -56,8 +56,8 @@ MAINTENANCE
  FROM
 bronze.erp_px_cat_g1v2
 
-select id from bronze.erp_px_cat_g1v2 where trim(id) not in (select cat_id from silver.crm_prd_info) -- co_pd
 
+select * from bronze.erp_px_cat_g1v2 where trim(id) not in (select cat_id from silver.crm_prd_info) -- co_pd
 select cat from bronze.erp_px_cat_g1v2 where trim(cat)!=cat or cat is null -- check null or spaces
 
 select SUBCAT from bronze.erp_px_cat_g1v2 where trim(SUBCAT)!=SUBCAT or SUBCAT is null -- check null or spaces

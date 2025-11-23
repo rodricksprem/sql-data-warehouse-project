@@ -42,6 +42,8 @@ left join silver.erp_px_cat_g1v2 pc
 on pi.cat_id = pc.id 
 where pi.prd_end_dt is NULL 
 
+select * from gold.dim_products order by category
+
 
 
 
