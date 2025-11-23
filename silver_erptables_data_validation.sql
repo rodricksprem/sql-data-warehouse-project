@@ -28,6 +28,7 @@ end as gen
  from bronze.erp_cust_az12;
 
 
+
 select 
 replace(cid,'-','') as cid,
 CNTRY from
